@@ -1,4 +1,18 @@
-
+@article{SemanticDeform2019,
+title = {Real-time editing of man-made mesh models under geometric constraints},
+journal = {Computers & Graphics},
+volume = {82},
+pages = {174-182},
+year = {2019},
+issn = {0097-8493},
+doi = {https://doi.org/10.1016/j.cag.2019.05.028},
+url = {https://www.sciencedirect.com/science/article/pii/S0097849319300901},
+author = {Congyi Zhang and Lei Yang and Liyou Xu and Guoping Wang and Wenping Wang},
+keywords = {Shape editing, Subspace acceleration, Non-linear least squares},
+abstract = {Editing man-made mesh models under multiple geometric constraints is a crucial need for product design to facilitate design exploration and iterative optimization. However, the presence of multiple geometric constraints (e.g. the radius of a cylindrical shape, distance from a point to a plane) as well as the high dimensionality of the discrete mesh representation of man-made models make it difficult to solve this constraint system in real-time. In this paper, we propose an approach based on subspace decomposition to achieve this goal. When a set of variables are edited by the user, the proposed method minimizes the residual of the constraint system in a least square sense to derive a new shape. The resulting shape shall comply with the assigned (extrinsic) constraints while maintaining the original (intrinsic) constraints analyzed from the given mesh model. In particular, we extract a meaningful subspace of the entire solution space based on the user’s edits to reduce the order of the problem, and solve the constraint system globally in real-time. Finally, we project the approximate solution back to the original solution space to obtain the editing result.},
+paperlink = {https://www.sciencedirect.com/science/article/pii/S0097849319300901},
+selected={true},
+}
 
 @ARTICLE{SGaze2019,
 author={Hu, Zhiming and Zhang, Congyi and Li, Sheng and Wang, Guoping and Manocha, Dinesh},
@@ -36,11 +50,33 @@ projectlink={https://cranehzm.github.io/SGaze.html}
   url={https://doi.org/10.1109/TVCG.2020.2973473},
   selected={true},
   projectlink={https://cranehzm.github.io/DGaze.html}
-  }
-  
+}
+
+@article{CPPM2020,
+author = {Lin, Zehui and Li, Sheng and Zeng, Xinlu and Zhang, Congyi and Jia, Jinzhu and Wang, Guoping and Manocha, Dinesh},
+title = {CPPM: Chi-Squared Progressive Photon Mapping},
+year = {2020},
+issue_date = {December 2020},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {39},
+number = {6},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3414685.3417822},
+doi = {10.1145/3414685.3417822},
+abstract = {We present a novel chi-squared progressive photon mapping algorithm (CPPM) that constructs an estimator by controlling the bandwidth to obtain superior image quality. Our estimator has parametric statistical advantages over prior nonparametric methods. First, we show that when a probability density function of the photon distribution is subject to uniform distribution, the radiance estimation is unbiased under certain assumptions. Next, the local photon distribution is evaluated via a chi-squared test to determine whether the photons follow the hypothesized distribution (uniform distribution) or not. If the statistical test deems that the photons inside the bandwidth are uniformly distributed, bandwidth reduction should be suspended. Finally, we present a pipeline with a bandwidth retention and conditional reduction scheme according to the test results. This pipeline not only accumulates sufficient photons for a reliable chi-squared test, but also guarantees that the estimate converges to the correct solution under our assumptions. We evaluate our method on various benchmarks and observe significant improvement in the running time and rendering quality in terms of mean squared error over prior progressive photon mapping methods.},
+journal = {ACM Trans. Graph.},
+month = {nov},
+articleno = {240},
+numpages = {12},
+keywords = {probability density function, chi-squared test, progressive photon mapping, mean squared error, radiance estimate},
+paperlink={https://dl.acm.org/doi/abs/10.1145/3414685.3417822},
+projectlink={https://bactlink.github.io/CPPM.html},
+selected={true},
+}
   
 @inproceedings{HandPainter2021,
-author = {Jiang, Ying and Zhang, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
+author = {Jiang, Ying and Zhang*, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
 title = {HandPainter - 3D Sketching in VR with Hand-Based Physical Proxy},
 year = {2021},
 isbn = {9781450380966},
@@ -60,6 +96,18 @@ paperlink={https://dl.acm.org/doi/abs/10.1145/3411764.3445302},
 projectlink={https://yingjiang96.github.io/handpainter}
 }
 
+@article{FacialMeasurement2021,
+  title={Anthropometric﻿ accuracy of three-dimensional average faces compared to conventional facial measurements},
+  author={Shan, Zhiyi and Hsung, Richard Tai-Chiu and Zhang, Congyi and Ji, Juanjuan and Choi, Wing Shan and Wang, Wenping and Yang, Yanqi and Gu, Min and Khambay, Balvinder S},
+  journal={Scientific Reports},
+  volume={11},
+  articleno={12254},
+  pages={1--12},
+  year={2021},
+  publisher={Nature Publishing Group},
+  paperlink={https://www.nature.com/articles/s41598-021-91579-4}
+}
+
 @article{Homography2022,
   title={Homography-guided stereo matching for wide-baseline image interpolation},
   author={Chang, Yuan and Zhang, Congyi and Chen, Yisong and Wang, Guoping},
@@ -75,7 +123,7 @@ projectlink={https://yingjiang96.github.io/handpainter}
 }
 
 @ARTICLE{CreatureShop2022,
-  author={Zhang, Congyi and Yangl, Lei and Chen, Nenglun and Vining, Nicholas and Sheffer, Alla and Lau, Francis C.M. and Wang, Guoping and Wang, Wenping},
+  author={Zhang, Congyi and Yang, Lei and Chen, Nenglun and Vining, Nicholas and Sheffer, Alla and Lau, Francis C.M. and Wang, Guoping and Wang, Wenping},
   journal={IEEE Transactions on Visualization and Computer Graphics}, 
   title={CreatureShop: Interactive 3D Character Modeling and Texturing from a Single Color Drawing}, 
   year={2022},

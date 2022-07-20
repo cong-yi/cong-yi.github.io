@@ -1,18 +1,30 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Fu":
+  - firstname: ["Hongbo"]
+    url: http://sweb.cityu.edu.hk/hongbofu/
+"Manocha":
+  - firstname: ["Dinesh"]
+    url: https://www.cs.umd.edu/people/dmanocha
+"Sheffer":
+  - firstname: ["Alla"]
+    url: https://www.cs.ubc.ca/~sheffa/
+"Lau":
+  - firstname: ["Francis C.M."]
+    url: https://i.cs.hku.hk/~fcmlau/
+"Lamberti":
+  - firstname: ["Fabrizio"]
+    url: https://staff.polito.it/fabrizio.lamberti/
+# "Cannavò":
+  # - firstname: ["Alberto"]
+    # url: https://scholar.google.it/citations?user=P-3NxFMAAAAJ&hl=it
+"Hu":
+  - firstname: ["Zhiming"]
+    url: https://cranehzm.github.io/
+"Vining":
+  - firstname: ["Nicholas"]
+    url: https://www.cs.ubc.ca/~nvining/
+"Jiang":
+  - firstname: ["Ying"]
+    url: https://yingjiang96.github.io/
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
-
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
-
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+    
+    
