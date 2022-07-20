@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-07-13
 inline: true
 ---
 
-A simple inline announcement.
+Our work on *CreatureShop: Interactive 3D Character Modeling and Texturing from a Single Color Drawing* was accepted at IEEE Transactions on Visualization and Computer Graphics.
