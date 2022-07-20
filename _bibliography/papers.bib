@@ -1,72 +1,81 @@
----
----
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,}
+@ARTICLE{SGaze2019,
+author={Hu, Zhiming and Zhang, Congyi and Li, Sheng and Wang, Guoping and Manocha, Dinesh},
+journal={IEEE Transactions on Visualization and Computer Graphics},
+title={SGaze: A Data-Driven Eye-Head Coordination Model for Realtime Gaze Prediction}, 
+year={2019},
+volume={25},
+number={5},
+pages={2002-2010},
+abstract={We present a novel, data-driven eye-head coordination model that can be used for realtime gaze prediction for immersive HMD-based applications without any external hardware or eye tracker. Our model (SGaze) is computed by generating a large dataset that corresponds to different users navigating in virtual worlds with different lighting conditions. We perform statistical analysis on the recorded data and observe a linear correlation between gaze positions and head rotation angular velocities. We also find that there exists a latency between eye movements and head movements. SGaze can work as a software-based realtime gaze predictor and we formulate a time related function between head movement and eye movement and use that for realtime gaze position prediction. We demonstrate the benefits of SGaze for gaze-contingent rendering and evaluate the results with a user study.},
+keywords={},
+doi={10.1109/TVCG.2019.2899187},
+url={https://doi.org/10.1109/TVCG.2019.2899187},
+ISSN={1941-0506},
+month={May},
+paperlink={https://ieeexplore.ieee.org/abstract/document/8643434},
+selected={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
+@ARTICLE{DGaze2020,
+  author={Hu, Zhiming and Li, Sheng and Zhang, Congyi and Yi, Kangrui and Wang, Guoping and Manocha, Dinesh},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={DGaze: CNN-Based Gaze Prediction in Dynamic Scenes}, 
+  year={2020},
+  volume={26},
+  number={5},
+  pages={1902-1911},
+  abstract={We conduct novel analyses of users' gaze behaviors in dynamic virtual scenes and, based on our analyses, we present a novel CNN-based model called DGaze for gaze prediction in HMD-based applications. We first collect 43 users' eye tracking data in 5 dynamic scenes under free-viewing conditions. Next, we perform statistical analysis of our data and observe that dynamic object positions, head rotation velocities, and salient regions are correlated with users' gaze positions. Based on our analysis, we present a CNN-based model (DGaze) that combines object position sequence, head velocity sequence, and saliency features to predict users' gaze positions. Our model can be applied to predict not only realtime gaze positions but also gaze positions in the near future and can achieve better performance than prior method. In terms of realtime prediction, DGaze achieves a 22.0% improvement over prior method in dynamic scenes and obtains an improvement of 9.5% in static scenes, based on using the angular distance as the evaluation metric. We also propose a variant of our model called DGaze_ET that can be used to predict future gaze positions with higher precision by combining accurate past gaze data gathered using an eye tracker. We further analyze our CNN architecture and verify the effectiveness of each component in our model. We apply DGaze to gaze-contingent rendering and a game, and also present the evaluation results from a user study.},
+  keywords={},
+  doi={10.1109/TVCG.2020.2973473},
+  ISSN={1941-0506},
   month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
+  paperlink={https://ieeexplore.ieee.org/abstract/document/8998375},
+  url={https://doi.org/10.1109/TVCG.2020.2973473},
   selected={true}
+  }
+  
+  
+@inproceedings{HandPainter2021,
+author = {Jiang, Ying and Zhang, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
+title = {HandPainter - 3D Sketching in VR with Hand-Based Physical Proxy},
+year = {2021},
+isbn = {9781450380966},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3411764.3445302},
+doi = {10.1145/3411764.3445302},
+abstract = {3D sketching in virtual reality (VR) enables users to create 3D virtual objects intuitively and immersively. However, previous studies showed that mid-air drawing may lead to inaccurate sketches. To address this issue, we propose to use one hand as a canvas proxy and the index finger of the other hand as a 3D pen. To this end, we first perform a formative study to compare two-handed interaction with tablet-pen interaction for VR sketching. Based on the findings of this study, we design HandPainter, a VR sketching system which focuses on the direct use of two hands for 3D sketching without requesting any tablet, pen, or VR controller. Our implementation is based on a pair of VR gloves, which provide hand tracking and gesture capture. We devise a set of intuitive gestures to control various functionalities required during 3D sketching, such as canvas panning and drawing positioning. We show the effectiveness of HandPainter by presenting a number of sketching results and discussing the outcomes of a user study-based comparison with mid-air drawing and tablet-based sketching tools.},
+booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
+articleno = {412},
+numpages = {13},
+keywords = {3D sketching, VR, hand-based interaction},
+location = {Yokohama, Japan},
+series = {CHI '21},
+selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{Homography2022,
+  title={Homography-guided stereo matching for wide-baseline image interpolation},
+  author={Chang, Yuan and Zhang, Congyi and Chen, Yisong and Wang, Guoping},
+  journal={Computational Visual Media},
+  abstract = {Image interpolation has a wide range of applications such as frame rate-up conversion and free viewpoint TV. Despite significant progresses, it remains an open challenge especially for image pairs with large displacements. In this paper, we first propose a novel optimization algorithm for motion estimation, which combines the advantages of both global optimization and a local parametric transformation model. We perform optimization over dynamic label sets, which are modified after each iteration using the prior of piecewise consistency to avoid local minima. Then we apply it to an image interpolation framework including occlusion handling and intermediate image interpolation. We validate the performance of our algorithm experimentally, and show that our approach achieves state-of-the-art performance.},
+  volume={8},
+  number={1},
+  pages={119--133},
+  year={2022},
+  publisher={Springer},
+  url = {https://doi.org/10.1007/s41095-021-0225-9},
+  paperlink={https://link.springer.com/article/10.1007/s41095-021-0225-9},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
+@ARTICLE{CreatureShop2022,
+  author={Zhang, Congyi and Yangl, Lei and Chen, Nenglun and Vining, Nicholas and Sheffer, Alla and Lau, Francis C.M. and Wang, Guoping and Wang, Wenping},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={CreatureShop: Interactive 3D Character Modeling and Texturing from a Single Color Drawing}, 
+  year={2022},
+  abstract={Creating 3D shapes from 2D drawings is an important problem with applications in content creation for computer animation and virtual reality. We introduce a new sketch-based system, {\em CreatureShop}, that enables amateurs to create high-quality textured 3D character models from 2D drawings with ease and efficiency. CreatureShop takes an input bitmap drawing of a character (such as an animal or other creature), depicted from an arbitrary descriptive pose and viewpoint, and creates a 3D shape with plausible geometric details and textures from a small number of user annotations on the 2D drawing. Our key contributions are a novel oblique view modeling method, a set of systematic approaches for producing plausible textures on the invisible or occluded parts of the 3D character (as viewed from the direction of the input drawing), and a user-friendly interactive system. We validate our system and methods by creating numerous 3D characters from various drawings, and compare our results with related works to show the advantages of our method. We perform a user study to evaluate the usability of our system, which demonstrates that our system is a practical and efficient approach to create fully-textured 3D character models for novice users.},
+  keywords={},
+  selected={true}
+  }
