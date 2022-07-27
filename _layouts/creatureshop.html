@@ -4,14 +4,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="author" content="Congyi Zhang" />
         <title>CreatureShop: Interactive 3D Character Modeling and Texturing from a Single Color Drawing</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="/assets/creatureshop/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="/assets/creatureshop/css/styles.css" rel="stylesheet" />
+        <link href="/assets/creatureshop/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     </head>
-    <body>
+    <main>
         <!-- Responsive navbar-->
 <!--         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -35,7 +36,7 @@
             </div>
         </nav> -->
         <!-- Page content-->
-        <div class="container">
+        <div class="container" id="main">
             <div class="text-center mt-5">
                 <h2>CreatureShop: Interactive 3D Character Modeling and Texturing</h2>
 				<h2>from a Single Color Drawing</h2>
@@ -57,25 +58,21 @@
 					<sup>5</sup>Texas A&M University
 				</h5>
 			</div>
-<!-- 			<div class="text-center">
-				<div class="col-md-4 col-md-offset-4 text-center">
-					<ul class="nav nav-pills nav-justified">
-						<li>
-							<a href="https://arxiv.org/abs/">
-							<image src="/assets/img/yt_icon_rgb.png" height="40px">
-								<h4><strong>Paper</strong></h4>
-							</a>
-						</li>
-						<li>
-							<a href="https://youtu.be/">
-							<image src="/assets/img/yt_icon_rgb.png" height="40px"><br>
-								<h4><strong>Video</strong></h4>
-							</a>
-						</li>
-					</ul>
+			<div class="row justify-content-md-center text-center mt-3">
+				<div class="col col-lg-2">
+					<a href="https://arxiv.org/abs/">
+					<image src="/assets/creatureshop/assets/CreatureShop_PDF_Thumb.png" height="80px">
+						<h5><strong>Paper</strong></h5>
+					</a>
 				</div>
-			</div> -->
-			<div class="text-center">
+<!-- 				<div class="col col-lg-2">
+					<a href="https://youtu.be/">
+					<image src="/assets/img/yt_icon_rgb.png" height="40px"><br>
+						<h4><strong>Video</strong></h4>
+					</a>
+				</div> -->
+			</div>
+			<div class="text-center mt-3">
 				<figure class="figure w-75">
 				  <img src="/assets/creatureshop/assets/creatureshop_cover.png" class="figure-img img-fluid rounded" alt="Teaser">
 				  <figcaption class="figure-caption">CreatureShop converts arbitrary bitmap character drawings (left), using a set of intuitive user annotations (second left), into watertight textured 3D meshes (right). Fox by <a href="https://www.twitter.com/natalia_linn">Natalia Linnik</a>; used with permission.</figcaption>
@@ -87,10 +84,13 @@
 				</h4>
                 <p class="text-left">Creating 3D shapes from 2D drawings is an important problem with applications in content creation for computer animation and virtual reality. We introduce a new sketch-based system, <em>CreatureShop</em>, that enables amateurs to create high-quality textured 3D character models from 2D drawings with ease and efficiency. CreatureShop takes an input bitmap drawing of a character (such as an animal or other creature), depicted from an arbitrary descriptive pose and viewpoint, and creates a 3D shape with plausible geometric details and textures from a small number of user annotations on the 2D drawing. Our key contributions are a novel oblique view modeling method, a set of systematic approaches for producing plausible textures on the invisible or occluded parts of the 3D character (as viewed from the direction of the input drawing), and a user-friendly interactive system. We validate our system and methods by creating numerous 3D characters from various drawings, and compare our results with related works to show the advantages of our method. We perform a user study to evaluate the usability of our system, which demonstrates that our system is a practical and efficient approach to create fully-textured 3D character models for novice users. </p>
             </div>
+			<div class="mx-auto w-75">
+				<video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
+					  <source src="/assets/creatureshop/assets/CreatureShop_Demo.mp4" type="video/mp4">
+				</video>
+			</div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="/assets/creatureshop/js/scripts.js"></script>
-    </body>
+        <script src="/assets/creatureshop/dist/js/bootstrap.bundle.min.js"></script>
+    </main>
 </html>
