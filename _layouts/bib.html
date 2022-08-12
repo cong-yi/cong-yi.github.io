@@ -2,17 +2,17 @@
 ---
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr">
-        {%- if entry.abbr -%}
-          {%- if site.data.venues[entry.abbr] -%}
-          <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
-          {%- else -%}
-          <abbr class="badge">{{entry.abbr}}</abbr>
-          {%- endif -%}
-        {%- endif -%}
-        </div>
-
-        <!-- Entry bib key -->
+		<!-- <div style="clear: both;">  -->
+		<div class="col abbr h-auto">
+			{%- if site.data.venues[entry.venue] -%}
+			<abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+			{%- else -%}
+			<abbr class="badge">{{entry.venue}}</abbr>
+			{%- endif -%}
+			<p><img class="rounded" src="{{ site.data.teasers[entry.abbr].img| prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}" width="300"></p>
+		</div>
+		<div class="col">
+        <!-- Entry bib key
         <div id="{{entry.key}}" class="col-sm-8">
         {% if entry.type == "thesis" -%}
           {{reference}}
@@ -170,4 +170,4 @@
           </div>
           {%- endif %}
         </div>
-      </div>
+	  </div>
