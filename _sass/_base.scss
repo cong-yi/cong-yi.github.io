@@ -6,6 +6,7 @@
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
+  font-family: 'Roboto', 'Verdana', 'Helvetica', 'Serif', 'Book Antiqua', 'Times New Roman';
 }
 
 hr {
@@ -174,7 +175,7 @@ blockquote {
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: bold;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
@@ -492,10 +493,12 @@ footer.sticky-bottom {
               text-decoration: none;
           }
         }
+		.bolded { font-weight: bolder; }
         > em {
           border-bottom: 1px solid;
           font-style: normal;
         }
+		
       }
       .links {
         a.btn {
