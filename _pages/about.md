@@ -2,21 +2,22 @@
 layout: about
 title: About
 permalink: /
-subtitle: Postdoctoral Fellow, Ph.D.
+subtitle: Research Associate, Ph.D.
 
-<!---profile:
+profile:
   align: right
   image: prof_pic.jpg
-  address: #> <p>Hong Kong</p>--->
+  image_circular: false
+<!---  address: #> <p>Hong Kong</p>--->
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral fellow at [the Department of Computer Science](https://www.cs.hku.hk/) in [the University of Hong Kong](https://hku.hk/). Before joining HKU, I received my Ph.D. degree from [the School of Electronics Engineering and Computer Science](https://eecs.pku.edu.cn/en/), [Peking University](https://english.pku.edu.cn/), and my B.Sc. degree from [the School of Mathematical Science](https://math.fudan.edu.cn/mathen/main.htm), [Fudan University](https://www.fudan.edu.cn/en/).
+I am a research associate at [the Department of Computer Science](https://www.cs.hku.hk/) in [the University of Hong Kong](https://hku.hk/). Prior to joining HKU, I earned my Ph.D. degree from [the School of Electronics Engineering and Computer Science](https://eecs.pku.edu.cn/en/), [Peking University](https://english.pku.edu.cn/), and my B.Sc. degree from [the School of Mathematical Science](https://math.fudan.edu.cn/mathen/main.htm), [Fudan University](https://www.fudan.edu.cn/en/). Recently, I also spent a year as a visiting researcher at [the Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/home) in Saarbrücken, Germany.
 
-My research interests include 3D reconstruction and modeling, augmented reality and virtual reality, and human–computer interaction.
+My research interests include 3D reconstruction and modeling, deep learning in computational media, augmented reality and virtual reality, and human–computer interaction.
 
 
 <!---Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
