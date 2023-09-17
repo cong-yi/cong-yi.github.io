@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of my projects.
 nav: true
 nav_order: 1
-display_categories: [Sketch-based modeling]
+display_categories: [Dental reconstruction, Sketch-based modeling]
 horizontal: false
 ---
 

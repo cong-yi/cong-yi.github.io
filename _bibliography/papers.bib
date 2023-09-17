@@ -84,7 +84,7 @@ venue={SIGGRAPH ASIA 2020}
 }
   
 @inproceedings{HandPainter2021,
-author = {Jiang, Ying and Zhang*, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
+author = {Jiang, Ying and Zhang<sup>†</sup>, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
 title = {HandPainter - 3D Sketching in VR with Hand-Based Physical Proxy},
 year = {2021},
 isbn = {9781450380966},
@@ -107,7 +107,7 @@ venue={CHI 2021}
 }
 
 @article{FacialMeasurement2021,
-  title={Anthropometric﻿ accuracy of three-dimensional average faces compared to conventional facial measurements},
+  title={Anthropometric accuracy of three-dimensional average faces compared to conventional facial measurements},
   author={Shan, Zhiyi and Hsung, Richard Tai-Chiu and Zhang, Congyi and Ji, Juanjuan and Choi, Wing Shan and Wang, Wenping and Yang, Yanqi and Gu, Min and Khambay, Balvinder S},
   journal={Scientific Reports},
   volume={11},
@@ -151,7 +151,8 @@ month = {dec},
 articleno = {217},
 numpages = {13},
 keywords = {Implicit neural representation, Morphable model, Teeth},
-paperlink={https://arxiv.org/abs/2211.11402},
+arxiv={2211.11402},
+paperlink={https://dl.acm.org/doi/10.1145/3550454.3555469},
 projectlink={https://vcai.mpi-inf.mpg.de/projects/DMM/},
 selected={true},
 abbr={dmm},
@@ -160,18 +161,50 @@ code={https://github.com/cong-yi/DMM}
 }
 
 
+
 @ARTICLE{CreatureShop2022,
   author={Zhang, Congyi and Yang, Lei and Chen, Nenglun and Vining, Nicholas and Sheffer, Alla and Lau, Francis C.M. and Wang, Guoping and Wang, Wenping},
   journal={IEEE Transactions on Visualization and Computer Graphics}, 
   title={CreatureShop: Interactive 3D Character Modeling and Texturing from a Single Color Drawing}, 
   year={2022},
-  abstract={Creating 3D shapes from 2D drawings is an important problem with applications in content creation for computer animation and virtual reality. We introduce a new sketch-based system, {\em CreatureShop}, that enables amateurs to create high-quality textured 3D character models from 2D drawings with ease and efficiency. CreatureShop takes an input bitmap drawing of a character (such as an animal or other creature), depicted from an arbitrary descriptive pose and viewpoint, and creates a 3D shape with plausible geometric details and textures from a small number of user annotations on the 2D drawing. Our key contributions are a novel oblique view modeling method, a set of systematic approaches for producing plausible textures on the invisible or occluded parts of the 3D character (as viewed from the direction of the input drawing), and a user-friendly interactive system. We validate our system and methods by creating numerous 3D characters from various drawings, and compare our results with related works to show the advantages of our method. We perform a user study to evaluate the usability of our system, which demonstrates that our system is a practical and efficient approach to create fully-textured 3D character models for novice users.},
+  abstract={Creating 3D shapes from 2D drawings is an important problem with applications in content creation for computer animation and virtual reality. We introduce a new sketch-based system, CreatureShop, that enables amateurs to create high-quality textured 3D character models from 2D drawings with ease and efficiency. CreatureShop takes an input bitmap drawing of a character (such as an animal or other creature), depicted from an arbitrary descriptive pose and viewpoint, and creates a 3D shape with plausible geometric details and textures from a small number of user annotations on the 2D drawing. Our key contributions are a novel oblique view modeling method, a set of systematic approaches for producing plausible textures on the invisible or occluded parts of the 3D character (as viewed from the direction of the input drawing), and a user-friendly interactive system. We validate our system and methods by creating numerous 3D characters from various drawings, and compare our results with related works to show the advantages of our method. We perform a user study to evaluate the usability of our system, which demonstrates that our system is a practical and efficient approach to create fully-textured 3D character models for novice users.},
   keywords={},
   selected={true},
   projectlink={https://cong-yi.github.io/projects/creatureshop/},
-  paperlink={https://arxiv.org/abs/2208.05572},
+  arxiv={2208.05572},
   abbr={creatureshop},
   venue={TVCG}
   }
   
-  
+@InProceedings{DualMeshUDF2023,
+    author={Zhang*, Congyi and Lin*, Guying and Yang, Lei and Li, Xin and Komura, Taku and Schaefer, Scott and Keyser, John and Wang, Wenping},
+    title={Surface Extraction from Neural Unsigned Distance Fields},
+    venue={ICCV 2023},
+	abstract={We propose a method, named DualMesh-UDF, to extract a surface from unsigned distance functions (UDFs), encoded by neural networks, or neural UDFs. Neural UDFs are becoming increasingly popular for surface representation because of their versatility in presenting surfaces with arbitrary topologies, as opposed to the signed distance function that is limited to representing a closed surface. However, the applications of neural UDFs are hindered by the notorious difficulty in extracting the target surfaces they represent. Recent methods for surface extraction from a neural UDF suffer from significant geometric errors or topological artifacts due to two main difficulties: (1) A UDF does not exhibit sign changes; and (2) A neural UDF typically has substantial approximation errors. 
+	DualMesh-UDF addresses these two difficulties. Specifically, given a neural UDF encoding a target surface S to be recovered, we first estimate the tangent planes of S at a set of sample points close to S. Next, we organize these sample points into local clusters, and for each local cluster, solve a linear least squares problem to determine a final surface point. These surface points are then connected to create the output mesh surface, which approximates the target surface. The robust estimation of the tangent planes of the target surface and the subsequent minimization problem constitute our core strategy, which contributes to the favorable performance of DualMesh-UDF over other competing methods. To efficiently implement this strategy, we employ an adaptive Octree. Within this framework, we estimate the location of a surface point in each of the octree cells identified as containing part of the target surface. Extensive experiments show that our method outperforms existing methods in terms of surface reconstruction quality while maintaining comparable computational efficiency.},
+    month= {October},
+    year= {2023},
+	booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+	paperlink={},
+	projectlink={https://cong-yi.github.io/projects/dualmeshudf/},
+	code={https://github.com/cong-yi/DualMesh-UDF},
+	selected={true},
+	abbr={dualmeshudf},
+    pages={0000-0000}
+}
+
+@InProceedings{Sherd2023,
+    title={Batch-based Model Registration for Fast 3D Sherd Reconstruction}, 
+    author={Wang, Jiepeng and Zhang, Congyi and Wang, Peng and Li, Xin and Cobb, Peter J. and Theobalt, Christian and Wang, Wenping},
+	abstract={3D reconstruction techniques have widely been used for digital documentation of archaeological fragments. However, efficient digital capture of fragments remains as a challenge. In this work, we aim to develop a portable, high-throughput, and accurate reconstruction system for efficient digitization of fragments excavated in archaeological sites. To realize high-throughput digitization of large numbers of objects, an effective strategy is to perform scanning and reconstruction in batches. However, effective batch-based scanning and reconstruction face two key challenges: 1) how to correlate partial scans of the same object from multiple batch scans, and 2) how to register and reconstruct complete models from partial scans that exhibit only small overlaps. To tackle these two challenges, we develop a new batch-based matching algorithm that pairs the front and back sides of the fragments, and a new Bilateral Boundary ICP algorithm that can register partial scans sharing very narrow overlapping regions. Extensive validation in labs and testing in excavation sites demonstrate that these designs enable efficient batch-based scanning for fragments. We show that such a batch-based scanning and reconstruction pipeline can have immediate applications on digitizing sherds in archaeological excavations.},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+	venue={ICCV 2023},
+    year = {2023},
+	month= {October},
+	abbr={sherd},
+	selected={true},
+	pages={0000-0000},
+	projectlink={https://jiepengwang.github.io/FIRES/},
+	code={https://github.com/jiepengwang/FIRES},
+	arxiv={2211.06897}
+}

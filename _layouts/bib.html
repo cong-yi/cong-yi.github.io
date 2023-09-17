@@ -26,14 +26,18 @@
           <!-- Author -->
           <div class="author">
 		  {%- assign author_is_corresponding = false -%}
+		  {%- assign joint_first_author = false -%}
           {%- for author in entry.author_array -%}
             {%- assign author_is_self = false -%}
             {%- if site.scholar.last_name contains author.last%}
               {%- if site.scholar.first_name contains author.first -%}
                 {%- assign author_is_self = true -%}
 			  {%- endif -%}
-			  {%- if author.last == "Zhang*" -%}
+			  {%- if author.last == "Zhang<sup>†</sup>" -%}
                 {%- assign author_is_corresponding = true -%}
+              {%- endif -%}
+			  {%- if author.last == "Zhang*" -%}
+                {%- assign joint_first_author = true -%}
               {%- endif -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
@@ -77,7 +81,10 @@
             {%- endif -%}
           {%- endfor %}
 		  {%- if author_is_corresponding -%}
-		     {{" (* denotes the corresponding author.)"}}
+		     {{"(† corresponding author)"}}
+		  {%- endif -%}
+		  {%- if joint_first_author -%}
+		     {{"(* equal contribution)"}}
 		  {%- endif -%}
           </div>
 

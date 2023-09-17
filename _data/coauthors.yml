@@ -37,3 +37,22 @@
 "Wang":
   - firstname: ["Wenping"]
     url: https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html
+  - firstname: ["Jiepeng"]
+    url: https://jiepengwang.github.io/
+  - firstname: ["Peng"]
+    url: https://totoro97.github.io/
+"Li":
+  - firstname: ["Xin"]
+    url: https://people.tamu.edu/~xinli/
+"Schaefer":
+  - firstname: ["Scott"]
+    url: https://people.engr.tamu.edu/schaefer/index.html
+"Keyser":
+  - firstname: ["John"]
+    url: https://people.engr.tamu.edu/keyser/index.html
+"Komura":
+  - firstname: ["Taku"]
+    url: https://i.cs.hku.hk/~taku/
+"Lin*":
+  - firstname: ["Guying"]
+    url: https://carrie-lin.github.io/
