@@ -1,5 +1,4 @@
 ---
-layout: dmm
 title: Morphable Dental Model
 description: An Implicit Parametric Morphable Dental Model
 img: /assets/dmm/assets/dmm_cover.jpg
