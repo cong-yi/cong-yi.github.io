@@ -5,6 +5,7 @@ description: Interactive 3D Character Modeling and Texturing from a Single Color
 img: /assets/creatureshop/assets/creatureshop_cover.png
 importance: 1
 category: Sketch-based modeling
+related_publications: CreatureShop2022
 ---
 
 <title>CreatureShop</title>
