@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: A growing collection of my projects.
 nav: true
-nav_order: 1
+nav_order: 3
 display_categories: [Nerual Implicit Representation, Dental reconstruction, Sketch-based modeling]
 horizontal: false
 ---
