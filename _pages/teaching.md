@@ -12,4 +12,6 @@ nav_order: 2
 
 ## 2024W1 (Sep-Dec 2024) @ UBC
 
-The course provides an introduction to computer graphics, with a focus on the fundamentals of modeling, rendering, and basic animation. We will learn the modern programmable graphics pipeline, with vertex and fragment shaders. Implementions will mainly use three.js, WebGL, and javascript. The focus will be on mathematical, conceptual, and algorithmic foundations of computer graphics.
+This course introduces computer graphics, focusing on the fundamentals of modeling, rendering, and basic animation. We cover the modern programmable graphics pipeline, including vertex and fragment shaders, with an emphasis on the mathematical, conceptual, methodological, and algorithmic foundations of computer graphics. Practical implementations will use Three.js, WebGL, and JavaScript.
+
+Course webiste: [https://www.students.cs.ubc.ca/~cs-314/Vsep2024/](https://www.students.cs.ubc.ca/~cs-314/Vsep2024/)
