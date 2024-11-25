@@ -22,7 +22,25 @@ selected={true},
 abbr={texpainter},
 preview={texpainter.png},
 paperlink={https://dl.acm.org/doi/10.1145/3641519.3657494},
-month= {July}
+month={July}
+}
+
+@ARTICLE{Skull2Face2024,
+  author={Liang, Yongqing and Zhang, Congyi and Zhao, Junli and Wang, Wenping and Li, Xin},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={Skull-to-Face: Anatomy-Guided 3D Facial Reconstruction and Editing}, 
+  year={2024},
+  abstract={Deducing the 3D face from a skull is a challenging task in forensic science and archaeology. This paper proposes an end-to-end 3D face reconstruction pipeline and an exploration method that can conveniently create textured, realistic faces that match the given skull. To this end, we propose a tissue-guided face creation and adaptation scheme. With the help of the state-of-the-art text-to-image diffusion model and parametric face model, we first generate an initial reference 3D face, whose biological profile aligns with the given skull. Then, with the help of tissue thickness distribution, we modify these initial faces to match the skull through a latent optimization process. The joint distribution of tissue thickness is learned on a set of skull landmarks using a collection of scanned skull-face pairs. We also develop an efficient face adaptation tool to allow users to interactively adjust tissue thickness either globally or at local regions to explore different plausible faces. Experiments conducted on a real skull-face dataset demonstrated the effectiveness of our proposed pipeline in terms of reconstruction accuracy, diversity, and stability.},
+  keywords={},
+  selected={true},
+  website={https://xmlyqing00.github.io/skull-to-face-page/},
+  arxiv={2403.16207},
+  abbr={skull2face},
+  venue={TVCG},
+  dimensions={true},
+  code={https://github.com/xmlyqing00/skull-to-face},
+  preview={skull2face.gif},
+  month={Nov}
 }
 
 @InProceedings{DualMeshUDF2023,
