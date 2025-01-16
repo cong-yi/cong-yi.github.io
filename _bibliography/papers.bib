@@ -1,3 +1,19 @@
+@misc{patchgrid2024,
+      title={Patch-Grid: An Efficient and Feature-Preserving Neural Implicit Surface Representation}, 
+      author={Guying Lin* and Lei Yang* and Congyi Zhang and Hao Pan and Yuhan Ping and Guodong Wei and Taku Komura and John Keyser and Wenping Wang},
+	  selected={false},
+      year={2024},
+      eprint={2308.13934},
+      archivePrefix={arXiv},
+	  venue={Preprint},
+      arxiv={2308.13934},
+      primaryClass={cs.GR},
+	  abbr={patchgrid},
+      url={https://arxiv.org/abs/2308.13934},
+	  preview={patch_grid.gif},
+	  abstract={Neural implicit representations are known to be more compact for depicting 3D shapes than traditional discrete representations. However, the neural representations tend to round sharp corners or edges and struggle to represent surfaces with open boundaries. Moreover, they are slow to train. We present a unified neural implicit representation, called Patch-Grid, that fits to complex shapes efficiently, preserves sharp features, and effectively models surfaces with open boundaries and thin geometric features. Our superior efficiency comes from embedding each surface patch into a local latent volume and decoding it using a shared MLP decoder, which is pretrained on various local surface geometries. With this pretrained decoder fixed, fitting novel shapes and local shape updates can be done efficiently. The faithful preservation of sharp features is enabled by adopting a novel merge grid to perform local constructive solid geometry (CSG) combinations of surface patches in the cells of an adaptive Octree, yielding better robustness than using a global CSG construction as proposed in the literature. Experiments show that our Patch-Grid method faithfully captures shapes with complex sharp features, open boundaries and thin structures, and outperforms existing learning-based methods in both efficiency and quality for surface fitting and local shape updates.}
+}
+
 @inproceedings{TexPainter2024,
 author = {Zhang, Hongkun and Pan, Zherong and Zhang, Congyi and Zhu, Lifeng and Gao, Xifeng},
 title = {TexPainter: Generative Mesh Texturing with Multi-view Consistency},
@@ -42,6 +58,47 @@ month={July}
   preview={skull2face.gif},
   month={Nov}
 }
+
+@ARTICLE{PESampling2024,
+author={Lin*, Guying and Yang*, Lei and Liu, Yuan and Zhang, Congyi and Hou, Junhui and Jin, Xiaogang and Komura, Taku and Keyser, John and Wang, Wenping},
+journal={IEEE Transactions on Visualization and Computer Graphics}, 
+title={On Optimal Sampling for Learning SDF Using MLPs Equipped with Positional Encoding}, 
+year={2024},
+volume={},
+number={},
+pages={1-13},
+abstract={Neural implicit fields, such as the neural signed distance field (SDF) of a shape, have emerged as a powerful representation for many applications, e.g., encoding a 3D shape and performing collision detection. Typically, implicit fields are encoded by Multi-layer Perceptrons (MLP) with positional encoding (PE) to capture high-frequency geometric details. However, a notable side effect of such PE-equipped MLPs is the noisy artifacts present in the learned implicit fields. While increasing the sampling rate could in general mitigate these artifacts, in this paper we aim to explain this adverse phenomenon through the lens of Fourier analysis. We devise a tool to determine the appropriate sampling rate for learning an accurate neural implicit field without undesirable side effects. Specifically, we propose a simple yet effective method to estimate the intrinsic frequency of a given network with randomized weights based on the Fourier analysis of the network's responses. It is observed that a PE-equipped MLP has an intrinsic frequency much higher than the highest frequency component in the PE layer. Sampling against this intrinsic frequency following the Nyquist-Sannon sampling theorem allows us to determine an appropriate training sampling rate. We empirically show in the setting of SDF fitting that this recommended sampling rate is sufficient to secure accurate fitting results, while further increasing the sampling rate would not further noticeably reduce the fitting error. Training PE-equipped MLPs simply with our sampling strategy leads to performances superior to the existing methods.},
+keywords={Encoding;Fitting;Training;Three-dimensional displays;Cutoff frequency;Shape;Vectors;Frequency estimation;Noise measurement;Geometry;SDF;neural representation;positional encoding;Fourier analysis;spectrum analysis;neural network},
+doi={10.1109/TVCG.2024.3522082},
+ISSN={1941-0506},
+month={Dec},
+abbr={pesampling},
+preview={pe_sample.png},
+arxiv={2401.01391},
+venue={TVCG},
+selected={true},
+paperlink={https://ieeexplore.ieee.org/document/10815066},}
+
+@ARTICLE{toothmonitor2024,
+  author={Xie, Jiaming and Zhang, Congyi and Wei, Guangshun and Wang, Peng and Wei, Guodong and Liu, Wenxi and Gu, Min and Luo, Ping and Wang, Wenping},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={Tooth Motion Monitoring in Orthodontic Treatment by Mobile Device-based Multi-view Stereo}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-12},
+  abstract={Nowadays, orthodontics has become an important part of modern personal life to assist one in improving mastication and raising self-esteem. However, the quality of orthodontic treatment still heavily relies on the empirical evaluation of experienced doctors, which lacks quantitative assessment and requires patients to visit clinics frequently for in-person examination. To resolve the aforementioned problem, we propose a novel and practical mobile device-based framework for precisely measuring tooth movement in treatment, so as to simplify and strengthen the traditional tooth monitoring process. To this end, we formulate the tooth movement monitoring task as a multi-view multi-object pose estimation problem via different views that capture multiple texture-less and severely occluded objects (i.e. teeth). Specifically, we exploit a pre-scanned 3D tooth model and a sparse set of multi-view tooth images as inputs for our proposed tooth monitoring framework. After extracting tooth contours and localizing the initial camera pose of each view from the initial configuration, we propose a joint pose estimation scheme to precisely estimate the 3D pose of each individual tooth, so as to infer their relative offsets during treatment. Furthermore, we introduce the metric of Relative Pose Bias to evaluate the individual tooth pose accuracy in a small scale. We demonstrate that our approach is capable of reaching high accuracy and efficiency as practical orthodontic treatment monitoring requires.},
+  keywords={Teeth;Monitoring;Three-dimensional displays;Cameras;Pose estimation;Solid modeling;Accuracy;Dentistry;Shape;Pipelines;Orthodontics;Motion Monitoring;Pose Estimation;Multi-view contour fitting},
+  doi={10.1109/TVCG.2024.3470992},
+  ISSN={1941-0506},
+  month={September},
+  selected={false},
+  abbr={toothmonitoring},
+  preview={toothmonitoring.png},
+  venue={TVCG},
+  paperlink={https://ieeexplore.ieee.org/abstract/document/10700936},}
+
+
 
 @InProceedings{DualMeshUDF2023,
     author={Zhang*, Congyi and Lin*, Guying and Yang, Lei and Li, Xin and Komura, Taku and Schaefer, Scott and Keyser, John and Wang, Wenping},
@@ -157,10 +214,12 @@ dimensions={true}
   title={Anthropometric accuracy of three-dimensional average faces compared to conventional facial measurements},
   author={Shan, Zhiyi and Hsung, Richard Tai-Chiu and Zhang, Congyi and Ji, Juanjuan and Choi, Wing Shan and Wang, Wenping and Yang, Yanqi and Gu, Min and Khambay, Balvinder S},
   journal={Scientific Reports},
+  abstract={This study aimed to evaluate and compare the accuracy of average faces constructed by different methods. Original three-dimensional facial images of 26 adults in Chinese ethnicity were imported into Di3DView and MorphAnalyser for image processing. Six average faces (Ave_D15, Ave_D24, Ave_MG15, Ave_MG24, Ave_MO15, Ave_MO24) were constructed using “surface-based registration” method with different number of landmarks and template meshes. Topographic analysis was performed, and the accuracy of six average faces was assessed by linear and angular parameters in correspondence with arithmetic means calculated from individual original images. Among the six average faces constructed by the two systems, Ave_MG15 had the highest accuracy in comparison with the conventional method, while Ave_D15 had the least accuracy. Other average faces were comparable regarding the number of discrepant parameters with clinical significance. However, marginal and non-registered areas were the most inaccurate regions using Di3DView. For MorphAnalyser, the type of template mesh had an effect on the accuracy of the final 3D average face, but additional landmarks did not improve the accuracy. This study highlights the importance of validating software packages and determining the degree of accuracy, as well as the variables which may affect the result.},
   volume={11},
   articleno={12254},
   pages={1--12},
   year={2021},
+  venue={Scientific Reports},
   publisher={Nature Publishing Group},
   paperlink={https://www.nature.com/articles/s41598-021-91579-4}
 }
