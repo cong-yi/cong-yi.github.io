@@ -51,18 +51,19 @@
         {%- for author in entry.author_array limit: author_array_limit -%}
           {%- assign author_is_self = false -%}
           {%- assign author_last_name = author.last | remove: "¶" | remove: "&" | remove: "*" | remove: "<sup>†</sup>" | remove: "^" -%}
+		  {%- if author.last contains "*" -%}
+			{%- assign joint_first_author = true -%}
+		  {%- else -%}
+			{%- if author.last contains "<sup>†</sup>" -%}
+				{%- assign author_is_corresponding = true -%}
+			{%- endif -%}
+		  {%- endif -%}
           {%- if site.scholar.last_name contains author_last_name -%}
             {%- if site.scholar.first_name contains author.first -%}
               {%- assign author_is_self = true -%}
             {%- endif -%}
 
-			{%- if author.last == "Zhang*" -%}
-				{%- assign joint_first_author = true -%}
-			{%- else -%}
-				{%- if author.last != "Zhang" -%}
-					{%- assign author_is_corresponding = true -%}
-				{%- endif -%}
-			{%- endif -%}
+
           {%- endif -%}
           {%- assign coauthor_url = nil -%}
           {%- if site.data.coauthors[author_last_name] -%}
