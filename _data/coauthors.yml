@@ -1,89 +1,89 @@
-"Fu":
+"fu":
   - firstname: ["Hongbo"]
     url: http://sweb.cityu.edu.hk/hongbofu/
-"Manocha":
+"manocha":
   - firstname: ["Dinesh"]
     url: https://www.cs.umd.edu/people/dmanocha
-"Sheffer":
+"sheffer":
   - firstname: ["Alla"]
     url: https://www.cs.ubc.ca/~sheffa/
-"Lau":
+"lau":
   - firstname: ["Francis C.M."]
     url: https://i.cs.hku.hk/~fcmlau/
-"Lamberti":
+"lamberti":
   - firstname: ["Fabrizio"]
     url: https://staff.polito.it/fabrizio.lamberti/
-# "Cannavò":
-  # - firstname: ["Alberto"]
-    # url: https://scholar.google.it/citations?user=P-3NxFMAAAAJ&hl=it
-"Hu":
+"cannavo":
+  - firstname: ["Alberto"]
+    url: https://scholar.google.it/citations?user=P-3NxFMAAAAJ&hl=it
+"hu":
   - firstname: ["Zhiming"]
     url: https://cranehzm.github.io/
-"Vining":
+"vining":
   - firstname: ["Nicholas"]
     url: https://www.cs.ubc.ca/~nvining/
-"Jiang":
+"jiang":
   - firstname: ["Ying"]
     url: https://yingjiang96.github.io/
-"Elgharib":
+"elgharib":
   - firstname: ["Mohamed"]
     url: https://people.mpi-inf.mpg.de/~elgharib/
-"Fox":
+"fox":
   - firstname: ["Gereon"]
     url: https://people.mpi-inf.mpg.de/~gfox/
-"Theobalt":
+"theobalt":
   - firstname: ["Christian"]
     url: https://people.mpi-inf.mpg.de/~theobalt/
-"Wang":
+"wang":
   - firstname: ["Wenping"]
     url: https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html
   - firstname: ["Jiepeng"]
     url: https://jiepengwang.github.io/
   - firstname: ["Peng"]
     url: https://totoro97.github.io/
-"Li":
+"li":
   - firstname: ["Xin"]
     url: https://people.tamu.edu/~xinli/
-"Schaefer":
+"schaefer":
   - firstname: ["Scott"]
     url: https://people.engr.tamu.edu/schaefer/index.html
-"Keyser":
+"keyser":
   - firstname: ["John"]
     url: https://people.engr.tamu.edu/keyser/index.html
-"Komura":
+"komura":
   - firstname: ["Taku"]
     url: https://i.cs.hku.hk/~taku/
-"Lin":
+"lin":
   - firstname: ["Guying"]
     url: https://carrie-lin.github.io/
-"Lin*":
+"lin*":
   - firstname: ["Guying"]
     url: https://carrie-lin.github.io/
-"Gao":
+"gao":
   - firstname: ["Xifeng"]
     url: https://gaoxifeng.github.io/
-"Pan":
+"pan":
   - firstname: ["Zherong"]
     url: https://dyingbrain.github.io/
   - firstname: ["Hao"]
     url: https://haopan.github.io/
-"Liang":
+"liang":
   - firstname: ["Yongqing"]
     url: https://lyq.me/
-"Liu":
+"liu":
   - firstname: ["Yuan"]
     url: https://liuyuan-pal.github.io/
   - firstname: ["Wenxi"]
     url: https://wenxiliu.github.io/
-"Hou":
+"hou":
   - firstname: ["Junhui"]
     url: https://sites.google.com/site/junhuihoushomepage/
-"Jin":
+"jin":
   - firstname: ["Xiaogang"]
     url: http://www.cad.zju.edu.cn/home/jin/
-"Wei":
+"wei":
   - firstname: ["Guangshun"]
     url: https://gsw-d.github.io/gswei.github.io/
-"Luo":
+"luo":
   - firstname: ["Ping"]
     url: http://luoping.me/

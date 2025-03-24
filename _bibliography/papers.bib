@@ -10,7 +10,8 @@
 	  selected={true},
 	  journal={ACM Trans. Graph.},
 	  venue={TOG},
-	  note={(will be presented at SIGGRAPH 2025)},
+	  google_scholar_id={3fE2CSJIrl8C},
+	  note={(will be presented at SIGGRAPH 2025, * equal contribution)},
 	  abstract={Neural implicit representations are known to be more compact for depicting 3D shapes than traditional discrete representations. However, the neural representations tend to round sharp corners or edges and struggle to represent surfaces with open boundaries. Moreover, they are slow to train. We present a unified neural implicit representation, called Patch-Grid, that fits to complex shapes efficiently, preserves sharp features, and effectively models surfaces with open boundaries and thin geometric features. Our superior efficiency comes from embedding each surface patch into a local latent volume and decoding it using a shared MLP decoder, which is pretrained on various local surface geometries. With this pretrained decoder fixed, fitting novel shapes and local shape updates can be done efficiently. The faithful preservation of sharp features is enabled by adopting a novel merge grid to perform local constructive solid geometry (CSG) combinations of surface patches in the cells of an adaptive Octree, yielding better robustness than using a global CSG construction as proposed in the literature. Experiments show that our Patch-Grid method faithfully captures shapes with complex sharp features, open boundaries and thin structures, and outperforms existing learning-based methods in both efficiency and quality for surface fitting and local shape updates.}
 }
 
@@ -23,6 +24,7 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3641519.3657494},
 doi = {10.1145/3641519.3657494},
+google_scholar_id = {aqlVkmm33-oC},
 abstract = {The recent success of pre-trained diffusion models unlocks the possibility of the automatic generation of textures for arbitrary 3D meshes in the wild. However, these models are trained in the screen space, while converting them to a multi-view consistent texture image poses a major obstacle to the output quality. In this paper, we propose a novel method to enforce multi-view consistency. Our method is based on the observation that latent space in a pre-trained diffusion model is noised separately for each camera view, making it difficult to achieve multi-view consistency by directly manipulating the latent codes. Based on the celebrated Denoising Diffusion Implicit Models (DDIM) scheme, we propose to use an optimization-based color-fusion to enforce consistency and indirectly modify the latent codes by gradient back-propagation. Our method further relaxes the sequential dependency assumption among the camera views. By evaluating on a series of general 3D models, we find our simple approach improves consistency and overall quality of the generated textures as compared to competing state-of-the-arts. Our implementation is available at: https://github.com/Quantuman134/TexPainter},
 booktitle = {ACM SIGGRAPH 2024 Conference Papers},
 articleno = {6},
@@ -57,6 +59,7 @@ month={July}
   code={https://github.com/xmlyqing00/skull-to-face},
   paperlink={https://ieeexplore.ieee.org/document/10791299},
   preview={skull2face.gif},
+  google_scholar_id = {M3ejUd6NZC8C},
   month={Nov}
 }
 
@@ -68,6 +71,7 @@ year={2024},
 volume={},
 number={},
 pages={1-13},
+note={(* equal contribution)},
 abstract={Neural implicit fields, such as the neural signed distance field (SDF) of a shape, have emerged as a powerful representation for many applications, e.g., encoding a 3D shape and performing collision detection. Typically, implicit fields are encoded by Multi-layer Perceptrons (MLP) with positional encoding (PE) to capture high-frequency geometric details. However, a notable side effect of such PE-equipped MLPs is the noisy artifacts present in the learned implicit fields. While increasing the sampling rate could in general mitigate these artifacts, in this paper we aim to explain this adverse phenomenon through the lens of Fourier analysis. We devise a tool to determine the appropriate sampling rate for learning an accurate neural implicit field without undesirable side effects. Specifically, we propose a simple yet effective method to estimate the intrinsic frequency of a given network with randomized weights based on the Fourier analysis of the network's responses. It is observed that a PE-equipped MLP has an intrinsic frequency much higher than the highest frequency component in the PE layer. Sampling against this intrinsic frequency following the Nyquist-Sannon sampling theorem allows us to determine an appropriate training sampling rate. We empirically show in the setting of SDF fitting that this recommended sampling rate is sufficient to secure accurate fitting results, while further increasing the sampling rate would not further noticeably reduce the fitting error. Training PE-equipped MLPs simply with our sampling strategy leads to performances superior to the existing methods.},
 keywords={Encoding;Fitting;Training;Three-dimensional displays;Cutoff frequency;Shape;Vectors;Frequency estimation;Noise measurement;Geometry;SDF;neural representation;positional encoding;Fourier analysis;spectrum analysis;neural network},
 doi={10.1109/TVCG.2024.3522082},
@@ -78,6 +82,7 @@ preview={pe_sample.png},
 arxiv={2401.01391},
 venue={TVCG},
 selected={true},
+google_scholar_id={_kc_bZDykSQC},
 paperlink={https://ieeexplore.ieee.org/document/10815066},}
 
 @ARTICLE{toothmonitor2024,
@@ -118,6 +123,8 @@ paperlink={https://ieeexplore.ieee.org/document/10815066},}
     pages={22531-22540},
 	dimensions={true},
 	preview={dualmeshudf.png},
+	note={(* equal contribution)},
+	google_scholar_id = {Zph67rFs4hoC},
 	paperlink={https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_Surface_Extraction_from_Neural_Unsigned_Distance_Fields_ICCV_2023_paper.html}
 }
 
@@ -126,6 +133,7 @@ paperlink={https://ieeexplore.ieee.org/document/10815066},}
     author={Wang, Jiepeng and Zhang, Congyi and Wang, Peng and Li, Xin and Cobb, Peter J. and Theobalt, Christian and Wang, Wenping},
 	abstract={3D reconstruction techniques have widely been used for digital documentation of archaeological fragments. However, efficient digital capture of fragments remains as a challenge. In this work, we aim to develop a portable, high-throughput, and accurate reconstruction system for efficient digitization of fragments excavated in archaeological sites. To realize high-throughput digitization of large numbers of objects, an effective strategy is to perform scanning and reconstruction in batches. However, effective batch-based scanning and reconstruction face two key challenges: 1) how to correlate partial scans of the same object from multiple batch scans, and 2) how to register and reconstruct complete models from partial scans that exhibit only small overlaps. To tackle these two challenges, we develop a new batch-based matching algorithm that pairs the front and back sides of the fragments, and a new Bilateral Boundary ICP algorithm that can register partial scans sharing very narrow overlapping regions. Extensive validation in labs and testing in excavation sites demonstrate that these designs enable efficient batch-based scanning for fragments. We show that such a batch-based scanning and reconstruction pipeline can have immediate applications on digitizing sherds in archaeological excavations.},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+	google_scholar_id = {YOwf2qJgpHMC},
 	venue={ICCV 2023},
     year = {2023},
 	month= {October},
@@ -166,6 +174,7 @@ abbr={dmm},
 venue={SIGGRAPH ASIA 2022},
 code={https://github.com/cong-yi/DMM},
 preview={dmm.png},
+google_scholar_id={5nxA0vEk-isC},
 dimensions={true}
 }
 
@@ -183,6 +192,7 @@ dimensions={true}
   venue={TVCG},
   dimensions={true},
   preview={creatureshop.jpg},
+  google_scholar_id={0EnyYjriUFMC},
   paperlink={https://ieeexplore.ieee.org/document/9852696}
 }
 
@@ -195,6 +205,7 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3411764.3445302},
 doi = {10.1145/3411764.3445302},
+note={(† corresponding author)},
 abstract = {3D sketching in virtual reality (VR) enables users to create 3D virtual objects intuitively and immersively. However, previous studies showed that mid-air drawing may lead to inaccurate sketches. To address this issue, we propose to use one hand as a canvas proxy and the index finger of the other hand as a 3D pen. To this end, we first perform a formative study to compare two-handed interaction with tablet-pen interaction for VR sketching. Based on the findings of this study, we design HandPainter, a VR sketching system which focuses on the direct use of two hands for 3D sketching without requesting any tablet, pen, or VR controller. Our implementation is based on a pair of VR gloves, which provide hand tracking and gesture capture. We devise a set of intuitive gestures to control various functionalities required during 3D sketching, such as canvas panning and drawing positioning. We show the effectiveness of HandPainter by presenting a number of sketching results and discussing the outcomes of a user study-based comparison with mid-air drawing and tablet-based sketching tools.},
 booktitle = {Proceedings of the 2021 CHI Conference on Human Factors in Computing Systems},
 articleno = {412},
@@ -208,6 +219,7 @@ website={https://yingjiang96.github.io/handpainter},
 abbr={handpainter},
 venue={CHI 2021},
 preview={handpainter.jpg},
+google_scholar_id={_FxGoFyzp5QC},
 dimensions={true}
 }
 
@@ -237,6 +249,7 @@ dimensions={true}
   publisher={Springer},
   url = {https://doi.org/10.1007/s41095-021-0225-9},
   paperlink={https://link.springer.com/article/10.1007/s41095-021-0225-9},
+  google_scholar_id = {Se3iqnhoufwC},
   venue={CVM 2021}
 }
 
@@ -251,6 +264,7 @@ dimensions={true}
   abstract={We conduct novel analyses of users' gaze behaviors in dynamic virtual scenes and, based on our analyses, we present a novel CNN-based model called DGaze for gaze prediction in HMD-based applications. We first collect 43 users' eye tracking data in 5 dynamic scenes under free-viewing conditions. Next, we perform statistical analysis of our data and observe that dynamic object positions, head rotation velocities, and salient regions are correlated with users' gaze positions. Based on our analysis, we present a CNN-based model (DGaze) that combines object position sequence, head velocity sequence, and saliency features to predict users' gaze positions. Our model can be applied to predict not only realtime gaze positions but also gaze positions in the near future and can achieve better performance than prior method. In terms of realtime prediction, DGaze achieves a 22.0% improvement over prior method in dynamic scenes and obtains an improvement of 9.5% in static scenes, based on using the angular distance as the evaluation metric. We also propose a variant of our model called DGaze_ET that can be used to predict future gaze positions with higher precision by combining accurate past gaze data gathered using an eye tracker. We further analyze our CNN architecture and verify the effectiveness of each component in our model. We apply DGaze to gaze-contingent rendering and a game, and also present the evaluation results from a user study.},
   keywords={},
   doi={10.1109/TVCG.2020.2973473},
+  google_scholar_id={YsMSGLbcyi4C},
   ISSN={1941-0506},
   month={May},
   dimensions={true},
@@ -275,6 +289,7 @@ number = {6},
 issn = {0730-0301},
 url = {https://doi.org/10.1145/3414685.3417822},
 doi = {10.1145/3414685.3417822},
+google_scholar_id = {WF5omc3nYNoC},
 abstract = {We present a novel chi-squared progressive photon mapping algorithm (CPPM) that constructs an estimator by controlling the bandwidth to obtain superior image quality. Our estimator has parametric statistical advantages over prior nonparametric methods. First, we show that when a probability density function of the photon distribution is subject to uniform distribution, the radiance estimation is unbiased under certain assumptions. Next, the local photon distribution is evaluated via a chi-squared test to determine whether the photons follow the hypothesized distribution (uniform distribution) or not. If the statistical test deems that the photons inside the bandwidth are uniformly distributed, bandwidth reduction should be suspended. Finally, we present a pipeline with a bandwidth retention and conditional reduction scheme according to the test results. This pipeline not only accumulates sufficient photons for a reliable chi-squared test, but also guarantees that the estimate converges to the correct solution under our assumptions. We evaluate our method on various benchmarks and observe significant improvement in the running time and rendering quality in terms of mean squared error over prior progressive photon mapping methods.},
 journal = {ACM Trans. Graph.},
 month = {nov},
@@ -306,6 +321,7 @@ paperlink = {https://www.sciencedirect.com/science/article/pii/S0097849319300901
 selected={true},
 abbr={deform},
 preview={deform.jpg},
+google_scholar_id={zYLM7Y9cAGgC},
 venue={SMI 2019}
 }
 
@@ -317,6 +333,7 @@ year={2019},
 volume={25},
 number={5},
 pages={2002-2010},
+google_scholar_id={IjCSPb-OGe4C},
 abstract={We present a novel, data-driven eye-head coordination model that can be used for realtime gaze prediction for immersive HMD-based applications without any external hardware or eye tracker. Our model (SGaze) is computed by generating a large dataset that corresponds to different users navigating in virtual worlds with different lighting conditions. We perform statistical analysis on the recorded data and observe a linear correlation between gaze positions and head rotation angular velocities. We also find that there exists a latency between eye movements and head movements. SGaze can work as a software-based realtime gaze predictor and we formulate a time related function between head movement and eye movement and use that for realtime gaze position prediction. We demonstrate the benefits of SGaze for gaze-contingent rendering and evaluate the results with a user study.},
 keywords={},
 doi={10.1109/TVCG.2019.2899187},
