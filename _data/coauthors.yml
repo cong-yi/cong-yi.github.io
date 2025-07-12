@@ -44,6 +44,8 @@
 "li":
   - firstname: ["Xin"]
     url: https://people.tamu.edu/~xinli/
+  - firstname: ["Peng"]
+    url: https://penghtyx.github.io/yuki-lipeng/
 "schaefer":
   - firstname: ["Scott"]
     url: https://people.engr.tamu.edu/schaefer/index.html
@@ -96,3 +98,6 @@
 "yi":
   - firstname: ["Kwang Moo"]
     url: https://www.cs.ubc.ca/~kmyi/
+"guo":
+  - firstname: ["Yike"]
+    url: https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo

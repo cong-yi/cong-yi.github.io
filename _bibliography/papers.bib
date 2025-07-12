@@ -47,6 +47,25 @@ keywords = {Implicit Surfaces, Explicit Surfaces, Solid Modeling, CSG, Parametri
 	  abstract={Neural implicit representations are known to be more compact for depicting 3D shapes than traditional discrete representations. However, the neural representations tend to round sharp corners or edges and struggle to represent surfaces with open boundaries. Moreover, they are slow to train. We present a unified neural implicit representation, called Patch-Grid, that fits to complex shapes efficiently, preserves sharp features, and effectively models surfaces with open boundaries and thin geometric features. Our superior efficiency comes from embedding each surface patch into a local latent volume and decoding it using a shared MLP decoder, which is pretrained on various local surface geometries. With this pretrained decoder fixed, fitting novel shapes and local shape updates can be done efficiently. The faithful preservation of sharp features is enabled by adopting a novel merge grid to perform local constructive solid geometry (CSG) combinations of surface patches in the cells of an adaptive Octree, yielding better robustness than using a global CSG construction as proposed in the literature. Experiments show that our Patch-Grid method faithfully captures shapes with complex sharp features, open boundaries and thin structures, and outperforms existing learning-based methods in both efficiency and quality for surface fitting and local shape updates.}
 }
 
+@inproceedings{CMD2025,
+    title={CMD: Controllable Multiview Diffusion for 3D Editing and Progressive Generation}, 
+    author={Peng Li and Suizhi Ma and Jialiang Chen and Yuan Liu and Congyi Zhang and Wei Xue and Wenhan Luo and Alla Sheffer and Wenping Wang and Yike Guo},
+    year={2025},
+	publisher = {Association for Computing Machinery},
+	venue={SIGGRAPH 2025},
+	arxiv={2505.07003},
+	selected={true},
+	abbr={cmd},
+	preview={cmd.png},
+	booktitle = {ACM SIGGRAPH 2025 Conference Papers},
+	location = {Vancouver, BC, CA},
+	series = {SIGGRAPH '25},
+	website={https://penghtyx.github.io/CMD/},
+	month={aug},
+	code={https://github.com/pengHTYX/CMD},
+	abstract = {Recently, 3D generation methods have shown their powerful ability to automate 3D model creation. However, most 3D generation methods only rely on an input image or a text prompt to generate a 3D model, which lacks the control of each component of the generated 3D model. Any modifications of the input image lead to an entire regeneration of the 3D models. In this paper, we introduce a new method called CMD that generates a 3D model from an input image while enabling flexible local editing of each component of the 3D model. In CMD, we formulate the 3D generation as a conditional multiview diffusion model, which takes the existing or known parts as conditions and generates the edited or added components. This conditional multiview diffusion model not only allows the generation of 3D models part by part but also enables local editing of 3D models according to the local revision of the input image without changing other 3D parts. Extensive experiments are conducted to demonstrate that CMD decomposes a complex 3D generation task into multiple components, improving the generation quality. Meanwhile, CMD enables efficient and flexible local editing of a 3D model by just editing one rendered image.}
+}
+
 @inproceedings{TexPainter2024,
 author = {Zhang, Hongkun and Pan, Zherong and Zhang, Congyi and Zhu, Lifeng and Gao, Xifeng},
 title = {TexPainter: Generative Mesh Texturing with Multi-view Consistency},
@@ -57,7 +76,7 @@ address = {New York, NY, USA},
 url = {https://doi.org/10.1145/3641519.3657494},
 doi = {10.1145/3641519.3657494},
 google_scholar_id = {aqlVkmm33-oC},
-abstract = {The recent success of pre-trained diffusion models unlocks the possibility of the automatic generation of textures for arbitrary 3D meshes in the wild. However, these models are trained in the screen space, while converting them to a multi-view consistent texture image poses a major obstacle to the output quality. In this paper, we propose a novel method to enforce multi-view consistency. Our method is based on the observation that latent space in a pre-trained diffusion model is noised separately for each camera view, making it difficult to achieve multi-view consistency by directly manipulating the latent codes. Based on the celebrated Denoising Diffusion Implicit Models (DDIM) scheme, we propose to use an optimization-based color-fusion to enforce consistency and indirectly modify the latent codes by gradient back-propagation. Our method further relaxes the sequential dependency assumption among the camera views. By evaluating on a series of general 3D models, we find our simple approach improves consistency and overall quality of the generated textures as compared to competing state-of-the-arts. Our implementation is available at: https://github.com/Quantuman134/TexPainter},
+abstract = {The recent success of pre-trained diffusion models unlocks the possibility of the automatic generation of textures for arbitrary 3D meshes in the wild. However, these models are trained in the screen space, while converting them to a multi-view consistent texture image poses a major obstacle to the output quality. In this paper, we propose a novel method to enforce multi-view consistency. Our method is based on the observation that latent space in a pre-trained diffusion model is noised separately for each camera view, making it difficult to achieve multi-view consistency by directly manipulating the latent codes. Based on the celebrated Denoising Diffusion Implicit Models (DDIM) scheme, we propose to use an optimization-based color-fusion to enforce consistency and indirectly modify the latent codes by gradient back-propagation. Our method further relaxes the sequential dependency assumption among the camera views. By evaluating on a series of general 3D models, we find our simple approach improves consistency and overall quality of the generated textures as compared to competing state-of-the-arts.},
 booktitle = {ACM SIGGRAPH 2024 Conference Papers},
 articleno = {6},
 numpages = {11},
