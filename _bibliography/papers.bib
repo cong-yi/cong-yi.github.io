@@ -49,7 +49,7 @@ keywords = {Implicit Surfaces, Explicit Surfaces, Solid Modeling, CSG, Parametri
 
 @inproceedings{CMD2025,
     title={CMD: Controllable Multiview Diffusion for 3D Editing and Progressive Generation}, 
-    author={Peng Li and Suizhi Ma and Jialiang Chen and Yuan Liu and Congyi Zhang and Wei Xue and Wenhan Luo and Alla Sheffer and Wenping Wang and Yike Guo},
+    author={Peng Li and Suizhi Ma and Jialiang Chen and Yuan Liu† and Congyi Zhang and Wei Xue and Wenhan Luo† and Alla Sheffer and Wenping Wang and Yike Guo},
     year={2025},
 	publisher = {Association for Computing Machinery},
 	venue={SIGGRAPH 2025},
@@ -63,8 +63,28 @@ keywords = {Implicit Surfaces, Explicit Surfaces, Solid Modeling, CSG, Parametri
 	website={https://penghtyx.github.io/CMD/},
 	month={aug},
 	code={https://github.com/pengHTYX/CMD},
+	note={(† corresponding author)},
 	abstract = {Recently, 3D generation methods have shown their powerful ability to automate 3D model creation. However, most 3D generation methods only rely on an input image or a text prompt to generate a 3D model, which lacks the control of each component of the generated 3D model. Any modifications of the input image lead to an entire regeneration of the 3D models. In this paper, we introduce a new method called CMD that generates a 3D model from an input image while enabling flexible local editing of each component of the 3D model. In CMD, we formulate the 3D generation as a conditional multiview diffusion model, which takes the existing or known parts as conditions and generates the edited or added components. This conditional multiview diffusion model not only allows the generation of 3D models part by part but also enables local editing of 3D models according to the local revision of the input image without changing other 3D parts. Extensive experiments are conducted to demonstrate that CMD decomposes a complex 3D generation task into multiple components, improving the generation quality. Meanwhile, CMD enables efficient and flexible local editing of a 3D model by just editing one rendered image.}
 }
+
+@ARTICLE{LJ2025,
+  author={Liu, Yumeng and Ma, Yuexin and Yang, Lei and Zhang†, Congyi and Wei, Guangshun and Chen, Runnan and Gu, Min and Pan, Jia and Yang, Zhengbao and Komura, Taku and Xin, Shiqing and Zhou, Yuanfeng and Tu, Changhe and Wang<sup>†</sup>, Wenping},
+  journal={IEEE Transactions on Visualization and Computer Graphics}, 
+  title={A Potential Field Method for Tooth Motion Planning in Orthodontic Treatment}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-12},
+  note={(† corresponding author)},
+  abstract={Invisible orthodontics, commonly known as clear alignment treatment, offers a more comfortable and aesthetically pleasing alternative in orthodontic care, attracting considerable attention in the dental community in recent years. It replaces conventional metal braces with a series of removable, and transparent aligners. Each aligner is crafted to facilitate a gradual adjustment of the teeth, ensuring progressive stages of dental correction. This necessitates the design for teeth motion. Here we present an automatic method and a system for generating collision-free teeth motion planning while avoiding gaps between adjacent teeth, which is unacceptable in clinical practice. To tackle this task, we formulate it as a constrained optimization problem and utilize the interior point method for its solution. We also developed an interactive system that enables dentists to easily visualize and edit the paths. Our method significantly speeds up the clear aligner planning process, creating the desired motion paths for a full set of teeth in under five minutes—a task that typically requires several hours of manual work. Our experiments and user studies confirm the effectiveness of this method in planning teeth movement, showcasing its potential to streamline orthodontic procedures.},
+  keywords={Teeth;Planning;Dentistry;Three-dimensional displays;Solid modeling;Optimization;Visualization;Training;Metals;Interactive systems;Biomedical Engineering;Motion Planning;Potential Field Method},
+  doi={10.1109/TVCG.2025.3567299},
+  ISSN={1941-0506},
+  abbr={lj},
+  venue={TVCG},
+  selected={true},
+  preview={lj.png},
+  month={},}
 
 @inproceedings{TexPainter2024,
 author = {Zhang, Hongkun and Pan, Zherong and Zhang, Congyi and Zhu, Lifeng and Gao, Xifeng},
@@ -93,6 +113,7 @@ preview={texpainter.png},
 paperlink={https://dl.acm.org/doi/10.1145/3641519.3657494},
 month={July}
 }
+
 
 @ARTICLE{Skull2Face2024,
   author={Liang, Yongqing and Zhang, Congyi and Zhao, Junli and Wang, Wenping and Li, Xin},
@@ -248,7 +269,7 @@ dimensions={true}
 }
 
 @inproceedings{HandPainter2021,
-author = {Jiang, Ying and Zhang<sup>†</sup>, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
+author = {Jiang, Ying and Zhang†, Congyi and Fu, Hongbo and Cannav\`{o}, Alberto and Lamberti, Fabrizio and Lau, Henry Y K and Wang, Wenping},
 title = {HandPainter - 3D Sketching in VR with Hand-Based Physical Proxy},
 year = {2021},
 isbn = {9781450380966},

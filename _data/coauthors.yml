@@ -77,6 +77,8 @@
     url: https://liuyuan-pal.github.io/
   - firstname: ["Wenxi"]
     url: https://wenxiliu.github.io/
+  - firstname: ["Yumeng"]
+    url: https://lym29.github.io/
 "hou":
   - firstname: ["Junhui"]
     url: https://sites.google.com/site/junhuihoushomepage/
@@ -101,3 +103,23 @@
 "guo":
   - firstname: ["Yike"]
     url: https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo
+"luo":
+  - firstname: ["Wenhan"]
+    url: https://whluo.github.io/
+"zhu":
+  - firstname: ["Lifeng"]
+    url: https://lfzhulf.github.io/
+"ma":
+  - firstname: ["Yuexin"]
+    url: https://yuexinma.me/
+"yang":
+  - firstname: ["Lei"]
+    url: https://leiyangjustin.github.io/
+"gu":
+  - firstname: ["Min"]
+    url: https://facdent.hku.hk/people/professoriate-staff/profile/drgumin
+"pan":
+  - firstname: ["Jia"]
+    url: https://www.cs.hku.hk/people/academic-staff/jpan
+  - firstname: ["Hao"]
+    url: https://haopan.github.io/
