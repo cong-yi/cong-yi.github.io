@@ -18,7 +18,7 @@
     url: https://scholar.google.it/citations?user=P-3NxFMAAAAJ&hl=it
 "hu":
   - firstname: ["Zhiming"]
-    url: https://cranehzm.github.io/
+    url: https://zhiminghu.net/
 "vining":
   - firstname: ["Nicholas"]
     url: https://www.cs.ubc.ca/~nvining/
@@ -58,17 +58,9 @@
 "lin":
   - firstname: ["Guying"]
     url: https://carrie-lin.github.io/
-"lin*":
-  - firstname: ["Guying"]
-    url: https://carrie-lin.github.io/
 "gao":
   - firstname: ["Xifeng"]
     url: https://gaoxifeng.github.io/
-"pan":
-  - firstname: ["Zherong"]
-    url: https://dyingbrain.github.io/
-  - firstname: ["Hao"]
-    url: https://haopan.github.io/
 "liang":
   - firstname: ["Yongqing"]
     url: https://lyq.me/
@@ -91,6 +83,8 @@
 "luo":
   - firstname: ["Ping"]
     url: http://luoping.me/
+  - firstname: ["Wenhan"]
+    url: https://whluo.github.io/
 "takikawa":
   - firstname: ["Suzuran"]
     url: https://stakikawa.github.io/
@@ -103,9 +97,6 @@
 "guo":
   - firstname: ["Yike"]
     url: https://facultyprofiles.hkust.edu.hk/profiles.php?profile=yike-guo-yikeguo
-"luo":
-  - firstname: ["Wenhan"]
-    url: https://whluo.github.io/
 "zhu":
   - firstname: ["Lifeng"]
     url: https://lfzhulf.github.io/
@@ -123,3 +114,5 @@
     url: https://www.cs.hku.hk/people/academic-staff/jpan
   - firstname: ["Hao"]
     url: https://haopan.github.io/
+  - firstname: ["Zherong"]
+    url: https://dyingbrain.github.io/
