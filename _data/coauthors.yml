@@ -58,6 +58,8 @@
 "lin":
   - firstname: ["Guying"]
     url: https://carrie-lin.github.io/
+  - firstname: ["Cheng"]
+    url: https://clinplayer.github.io/
 "gao":
   - firstname: ["Xifeng"]
     url: https://gaoxifeng.github.io/
@@ -106,6 +108,8 @@
 "yang":
   - firstname: ["Lei"]
     url: https://leiyangjustin.github.io/
+  - firstname: ["Jinfan"]
+    url: https://jinfanyang.github.io/
 "gu":
   - firstname: ["Min"]
     url: https://facdent.hku.hk/people/professoriate-staff/profile/drgumin
@@ -116,3 +120,9 @@
     url: https://haopan.github.io/
   - firstname: ["Zherong"]
     url: https://dyingbrain.github.io/
+"dong":
+  - firstname: ["Qiujie"]
+    url: https://qiujiedong.github.io/
+"tu":
+  - firstname: ["Changhe"]
+    url: https://irc.cs.sdu.edu.cn/~chtu/index.html

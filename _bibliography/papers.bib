@@ -26,6 +26,42 @@ google_scholar_id = {7PzlFSSx8tAC},
 keywords = {Implicit Surfaces, Explicit Surfaces, Solid Modeling, CSG, Parametric Curves \& Surfaces}
 }
 
+@article{NeuPPS2025,
+author = {Yang, Lei and Liang, Yongqing and Li, Xin and Zhang, Congyi and Lin, Guying and Lin, Cheng and Sheffer, Alla and Schaefer, Scott and Keyser, John and Wang, Wenping},
+title = {NeuPPS: Neural Piecewise Parametric Surfaces},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3771546},
+doi = {10.1145/3771546},
+abstract = {Piecewise parametric surfaces have long been established as prevalent geometric representations; however, they often require surface refinement or sophisticated quadrangulation to accurately represent complex geometries. Geometric deep learning has shown that neural networks can provide greater representational power than conventional methods. Nevertheless, approaches using a single parametric surface for shape fitting struggle to capture fine-grained geometric details, while multi-patch methods fail to ensure seamless connections between adjacent patches. We present Neural Piecewise Parametric Surfaces (NeuPPS), the first piecewise neural surface representation that allows for coarse patch layouts composed of arbitrary n-sided surface patches to model complex surface geometries with high precision, offering enhanced flexibility compared to traditional parametric surfaces. This new surface representation guarantees, by construction, the continuity between adjacent patches, a property that other neural patch-based approaches cannot ensure. Two novel components are introduced: a learnable feature complex and a continuous mapping function approximated by multi-layer perceptrons (MLPs). We apply the proposed NeuPPS to surface fitting and shape space learning tasks. Extensive experiments demonstrate the advantages of NeuPPS over traditional parametric representations and existing patch-based learning approaches.},
+venue={TOG},
+journal = {ACM Trans. Graph.},
+month = oct,
+keywords = {Deep learning, Surface reconstruction},
+google_scholar_id = {qUcmZB5y_30C},
+selected={true},
+abbr={neupps},
+preview={neupps.png},
+}
+
+@ARTICLE{neuvas2025,
+      title={NeuVAS: Neural Implicit Surfaces for Variational Shape Modeling}, 
+      author={Pengfei Wang and Qiujie Dong and Fangtian Liang and Hao Pan and Lei Yang and Congyi Zhang and Guying Lin and Caiming Zhang and Yuanfeng Zhou and Changhe Tu and Shiqing Xin and Alla Sheffer and Xin Li and Wenping Wang},
+      year={2025},
+      arxiv={2506.13050},
+      primaryClass={cs.GR},
+	  abbr={neuvas},
+	  preview={neuvas.png},
+	  selected={true},
+	  journal = {ACM Trans. Graph.},
+	  month = dec,
+	  keywords = {Neural implicit surface representation, Variational shape modeling},
+	  venue={SIGGRAPH Asia 2025},
+	  abstract={Neural implicit shape representation has drawn significant attention in recent years due to its smoothness, differentiability, and topological flexibility. However, directly modeling the shape of a neural implicit surface, especially as the zero-level set of a neural signed distance function (SDF), with sparse geometric control is still a challenging task. Sparse input shape control typically includes 3D curve networks or, more generally, 3D curve sketches, which are unstructured and cannot be connected to form a curve network, and therefore more difficult to deal with. While 3D curve networks or curve sketches provide intuitive shape control, their sparsity and varied topology pose challenges in generating high-quality surfaces to meet such curve constraints. In this paper, we propose NeuVAS, a variational approach to shape modeling using neural implicit surfaces constrained under sparse input shape control, including unstructured 3D curve sketches as well as connected 3D curve networks. Specifically, we introduce a smoothness term based on a functional of surface curvatures to minimize shape variation of the zero-level set surface of a neural SDF. We also develop a new technique to faithfully model $G^0$ sharp feature curves as specified in the input curve sketches. Comprehensive comparisons with the state-of-the-art methods demonstrate the significant advantages of our method.}
+}
+
 @ARTICLE{patchgrid2025,
       title={Patch-Grid: An Efficient and Feature-Preserving Neural Implicit Surface Representation}, 
       author={Guying Lin* and Lei Yang* and Congyi Zhang and Hao Pan and Yuhan Ping and Guodong Wei and Taku Komura and John Keyser and Wenping Wang},
