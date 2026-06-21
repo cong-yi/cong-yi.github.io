@@ -5,6 +5,7 @@ title: Teaching
 description: 
 nav: true
 nav_order: 6
+calendar: true
 ---
 
 ## The University of Texas at Dallas
