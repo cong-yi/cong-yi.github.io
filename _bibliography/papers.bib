@@ -7,7 +7,7 @@
 	selected={true},
 	abbr={supervoxelgpt},
 	preview={supervoxelgpt.png},
-	booktitle = {ECCV 2026 Conference Papers},
+	booktitle = {Computer Vision – ECCV 2026: 19th European Conference},
 	location = {Malmö, Sweden},
 	series = {ECCV '26},
 	month={sep},
@@ -50,7 +50,7 @@ code={https://github.com/cong-yi/NESI},
 preview={nesi.png},
 doi = {10.1145/3742893},
 website={https://www.cs.ubc.ca/labs/imager/tr/2025/nesi/},
-note={(will be presented at SIGGRAPH Asia 2025)},
+note={(presented at SIGGRAPH Asia 2025)},
 abstract = {Compressed representations of 3D shapes that are compact, accurate, and can be processed efficiently directly in compressed form, are extremely useful for digital media applications. Recent approaches in this space focus on learned implicit or parametric representations. While implicits are well suited for tasks such as in-out queries, they lack natural 2D parameterization, complicating tasks such as texture or normal mapping. Conversely, parametric representations support the latter tasks but are ill-suited for occupancy queries. We propose a novel learned alternative to these approaches, based on intersections of localized explicit, or height-field, surfaces. Since explicits can be trivially expressed both implicitly and parametrically, NESI directly supports a wider range of processing operations than implicit alternatives, including occupancy queries and parametric access. We represent input shapes using a collection of differently oriented height-field bounded half-spaces combined using volumetric Boolean intersections. We first tightly bound each input using a pair of oppositely oriented height-fields, forming a Double Height-Field (DHF) Hull. We refine this hull by intersecting it with additional localized height-fields (HFs) that capture surface regions in its interior. We minimize the number of HFs necessary to accurately capture each input and compactly encode both the DHF hull and the local HFs as neural functions defined over subdomains of  (mathbb {R}^2) . This reduced dimensionality encoding delivers high-quality compact approximations. Given similar parameter count, or storage capacity, NESI significantly reduces approximation error compared to the state-of-the-art, especially at lower parameter counts.},
 journal = {ACM Trans. Graph.},
 month = jul,
@@ -78,6 +78,7 @@ google_scholar_id = {qUcmZB5y_30C},
 selected={true},
 abbr={neupps},
 preview={neupps.png},
+note={(presented at SIGGRAPH Asia 2025)}
 }
 
 @ARTICLE{neuvas2025,
@@ -116,7 +117,7 @@ preview={neupps.png},
 	  code={https://github.com/Carrie-lin/Patch-Grid},
 	  doi = {10.1145/3727142},
 	  google_scholar_id={3fE2CSJIrl8C},
-	  note={(will be presented at SIGGRAPH 2025, * equal contribution)},
+	  note={(presented at SIGGRAPH 2025, * equal contribution)},
 	  abstract={Neural implicit representations are known to be more compact for depicting 3D shapes than traditional discrete representations. However, the neural representations tend to round sharp corners or edges and struggle to represent surfaces with open boundaries. Moreover, they are slow to train. We present a unified neural implicit representation, called Patch-Grid, that fits to complex shapes efficiently, preserves sharp features, and effectively models surfaces with open boundaries and thin geometric features. Our superior efficiency comes from embedding each surface patch into a local latent volume and decoding it using a shared MLP decoder, which is pretrained on various local surface geometries. With this pretrained decoder fixed, fitting novel shapes and local shape updates can be done efficiently. The faithful preservation of sharp features is enabled by adopting a novel merge grid to perform local constructive solid geometry (CSG) combinations of surface patches in the cells of an adaptive Octree, yielding better robustness than using a global CSG construction as proposed in the literature. Experiments show that our Patch-Grid method faithfully captures shapes with complex sharp features, open boundaries and thin structures, and outperforms existing learning-based methods in both efficiency and quality for surface fitting and local shape updates.}
 }
 
