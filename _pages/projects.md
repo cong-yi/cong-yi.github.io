@@ -5,7 +5,7 @@ permalink: /projects/
 description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [Nerual Implicit Representation, Dental reconstruction, Sketch-based modeling]
+display_categories: [Neural Implicit Representation, Dental reconstruction, Sketch-based modeling]
 horizontal: false
 ---
 
