@@ -10,7 +10,8 @@ calendar: true
 
 ## The University of Texas at Dallas
 
-#### CS 4361 Computer Graphics (2025 Fall)
+#### CS 6366 Computer Graphics (2026 Spring)
+#### CS 4361 Computer Graphics (2025 Fall, 2026 Fall)
 
 
 ## The University of British Columbia

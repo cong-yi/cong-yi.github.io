@@ -26,8 +26,8 @@ _styles: |
 
 <p class="text-center project-authors">
   <strong>Authors:</strong> 
-  <a href="https://cong-yi.github.io/">Congyi Zhang</a>, 
-  <a href="https://carrie-lin.github.io/">Guying Lin</a>, 
+  <a href="https://cong-yi.github.io/">Congyi Zhang</a>*, 
+  <a href="https://carrie-lin.github.io/">Guying Lin</a>*, 
   <a href="https://scholar.google.com.hk/citations?user=JAzFhXQAAAAJ">Lei Yang</a>, 
   <a href="https://people.tamu.edu/~xinli/">Xin Li</a>, 
   <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a>, 
@@ -35,6 +35,7 @@ _styles: |
   <a href="https://people.engr.tamu.edu/keyser/index.html">John Keyser</a>, 
   <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html">Wenping Wang</a>
 </p>
+<p class="text-center" style="font-size: 0.9rem; margin-top: -1rem; margin-bottom: 1.5rem;">* joint first authors</p>
 
 <div class="text-center project-links">
   <a href="https://arxiv.org/abs/2309.08878" class="btn btn-outline-primary btn-sm">Paper (arXiv)</a>
