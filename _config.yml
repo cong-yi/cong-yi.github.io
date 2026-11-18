@@ -8,7 +8,7 @@ middle_name:
 last_name: Zhang
 contact_note: > #
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Assistant Professor of Computer Science at The University of Texas at Dallas, working on neural shape representation, AI for 3D content generation, human-computer interaction, and 3D reconstruction.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -96,7 +96,7 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false # only the blog page used it; set to true again if you add one (_pages/blog.md)
 
 related_blog_posts:
   enabled: false
@@ -126,17 +126,7 @@ giscus:
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+external_sources: [] # e.g. - name: medium.com / rss_url: https://medium.com/@you/feed / categories: [external-posts]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -184,6 +174,9 @@ kramdown:
 include: ["_pages", "_scripts"]
 exclude:
   - bin/
+  - AGENTS.md
+  - ANALYTICS.md
+  - CLAUDE.md
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - Dockerfile
@@ -197,10 +190,13 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
+  - QUICKSTART.md
   - README.md
   - readme_preview/
+  - requirements.txt
+  - SEO.md
+  - TROUBLESHOOTING.md
   - vendor
 keep_files:
   - CNAME
