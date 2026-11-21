@@ -1,2 +1,7 @@
 # Force LF line endings, needed for Docker to work on Windows
 *.sh text eol=lf
+# Local overrides of al_folio_core theme files are tracked by checksum in .al-folio-overrides.yml
+# (bundle exec al-folio upgrade overrides audit), so keep their line endings the same on every OS.
+_includes/** text eol=lf
+_layouts/** text eol=lf
+_sass/** text eol=lf
