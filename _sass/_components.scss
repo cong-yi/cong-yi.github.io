@@ -47,10 +47,33 @@ ul.task-list input[type="checkbox"] {
 
   .card-title {
     color: var(--global-text-color);
+    margin-bottom: 0.75rem;
+  }
+
+  // Muted card descriptions, as before the v1 merge. The v1 core still ships this colour,
+  // but inside a cascade layer, where the site-wide text colour in _typography.scss wins.
+  .card-text {
+    color: #747373;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .card-body {
     padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+
+    // Headings inside cards stay regular weight, as Bootstrap/MDB made them in al-folio
+    // v0.x. Without this the site-wide heading weights in _typography.scss turn the
+    // project card titles bold now that the v1 (Tailwind) core is in use.
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 400;
+    }
   }
 }
 
@@ -61,6 +84,40 @@ ul.task-list input[type="checkbox"] {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+// The project pages (_projects/*.md) use Bootstrap's `btn-outline-dark` and `ml-2`.
+// al-folio v1's Tailwind build only ships `btn-outline-primary`, so the dark variant
+// and the spacing helper are defined here, in the same shape as the theme's own rule.
+.btn-outline-dark {
+  border-color: var(--global-text-color);
+  color: var(--global-text-color);
+  background: none;
+
+  &:hover {
+    background: var(--global-text-color);
+    color: var(--global-bg-color);
+  }
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+// Paper/Code buttons on the project pages (`<div class="project-links">`): keep the
+// roomier upper-case outline buttons they had under Bootstrap/MDB; the v1 core's
+// `.btn-sm` on its own is considerably smaller.
+.project-links .btn {
+  padding: 0.38rem 1.6rem;
+  border-width: 2px;
+  text-transform: uppercase;
+  box-shadow:
+    0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .hoverable {

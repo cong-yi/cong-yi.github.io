@@ -36,6 +36,36 @@ h4 {
   font-size: 1.1rem;
 }
 
+// Base element styles that Bootstrap/MDB provided in al-folio v0.x. The v1 (Tailwind)
+// core no longer ships them, so they are restored here to keep bold text, horizontal
+// rules and code blocks looking the way they did before the v1 template merge.
+strong {
+  font-weight: 500;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0; // the top border is set again further down in this file
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 87.5%;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+
+  code {
+    font-size: inherit;
+  }
+}
+
 p,
 h1,
 h2,
